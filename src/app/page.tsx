@@ -41,9 +41,14 @@ export default function HomePage() {
     return () => clearInterval(interval)
   }, [])
   return (
-    <main className="w-screen flex flex-col gap-24 justify-between items-center h-5/6 py-12">
-      <h1 className="text-5xl bg-slate-200 px-8 py-4 rounded-full font-medium">Compass Refresh</h1>
+    <main className="w-screen flex flex-col gap-24 justify-between items-center h-4/6 py-12">
+      <h1 className="text-3xl bg-slate-200 px-8 py-4 rounded-full font-medium">Compass Refresh</h1>
       <h2 className="-mt-20 text-xl">Coming Soon!</h2>
+      <div className="-mt-20 bg-slate-200 text-xl px-y px-2">
+          <select className="bg-slate-200" onChange={(e) => setColor(e.target.value)}>
+            { COLORS.map(c => <option key={c.name} value={c.value}>{c.name}</option>)}
+          </select>
+        </div>
       <div className="z-10" style={{perspective: '400px'}}>
         <div id="dna" style={{animation: 'r-y 3s linear infinite'}}>
           {new Array(120).fill(0).map((_, i) => (
@@ -55,11 +60,7 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-        <div className="bg-slate-200 text-3xl rounded-full px-y px-8">
-          <select className="bg-slate-200" onChange={(e) => setColor(e.target.value)}>
-            { COLORS.map(c => <option key={c.name} value={c.value}>{c.name}</option>)}
-          </select>
-        </div>
+
     </main> 
   );
 }
