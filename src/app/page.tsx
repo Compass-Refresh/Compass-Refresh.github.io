@@ -45,7 +45,7 @@ export default function HomePage() {
       <h1 className="text-3xl bg-slate-200 px-8 py-4 rounded-full font-medium">Compass Refresh</h1>
       <h2 className="-mt-20 text-xl">Coming Soon!</h2>
       <div className="-mt-20 bg-slate-200 text-xl px-y px-2">
-          <select className="bg-slate-200" onChange={(e) => setColor(e.target.value)}>
+          <select value={color} className="bg-slate-200" onChange={(e) => setColor(e.target.value)}>
             { COLORS.map(c => <option key={c.name} value={c.value}>{c.name}</option>)}
           </select>
         </div>
