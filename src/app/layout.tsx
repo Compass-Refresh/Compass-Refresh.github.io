@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
+      <head>
+        <script defer src="https://cdn.tailwindcss.com"></script>
+      </head>
       <body>{children}</body>
     </html>
   );
