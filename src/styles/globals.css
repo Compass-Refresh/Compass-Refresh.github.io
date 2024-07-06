@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: 'saira';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url("/fonts/saira.ttf")
+}
+
+@font-face {
+    font-family: 'saira-italic';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url("/fonts/saira-italic.ttf")
+}
+
+
 @keyframes r-y {
     0% {
       transform: rotateY(0deg);
@@ -17,3 +34,4 @@
 * {
 transform-style: preserve-3d;
 }
+
