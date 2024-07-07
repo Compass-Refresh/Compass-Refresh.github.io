@@ -9,7 +9,7 @@ export function Hero({ className }: HeroProps) {
     <section
       className={cn(
         "h-fluid-500-800 relative",
-        "flex flex-col pt-12 font-sans",
+        "flex flex-col font-sans",
         className,
       )}
     >
@@ -20,7 +20,7 @@ export function Hero({ className }: HeroProps) {
         src="/images/compass-refresh-truck.webp"
       />
 
-      <div className="flex flex-col bg-black bg-opacity-50 p-2 pt-12 text-center text-white">
+      <div className="flex flex-col bg-black bg-opacity-50 p-2 pt-12 text-center text-white backdrop-blur-sm">
         <h1 className="self-center border-b  border-l-8 border-t border-cyan-600 bg-cyan-950 px-4 py-2 text-2xl">
           Elevated Commercial Space
         </h1>
