@@ -1,5 +1,4 @@
 import { cn } from "@/utils/cn";
-import Image from "next/image";
 
 export type HeroProps = {
   className?: string;
@@ -9,7 +8,7 @@ export function Hero({ className }: HeroProps) {
   return (
     <section
       className={cn(
-        "relative h-[500px] w-screen",
+        "h-fluid-500-800 relative",
         "flex flex-col pt-12 font-sans",
         className,
       )}

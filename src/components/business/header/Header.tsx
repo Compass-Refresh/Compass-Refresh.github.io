@@ -14,7 +14,7 @@ export function Header({ className }: HeaderProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 z-10 h-12 w-screen drop-shadow-md",
+        "sticky top-0 z-10 h-12 drop-shadow-md",
         "overflow-visible bg-cyan-900",
         className,
       )}

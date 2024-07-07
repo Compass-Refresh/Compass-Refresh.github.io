@@ -2,36 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'saira';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url("/fonts/saira.ttf")
+  font-family: "saira";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url("/fonts/saira.ttf");
 }
 
 @font-face {
-    font-family: 'saira-italic';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url("/fonts/saira-italic.ttf")
+  font-family: "saira-italic";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url("/fonts/saira-italic.ttf");
 }
-
 
 @keyframes r-y {
-    0% {
-      transform: rotateY(0deg);
-    }
-
-  
-    100% {
-      transform: rotateY(360deg);
-    }
+  0% {
+    transform: rotateY(0deg);
   }
 
-* {
-transform-style: preserve-3d;
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
+* {
+  transform-style: preserve-3d;
+}
+
+@layer utilities {
+  .w-fluid-500-800 {
+    width: var(--fluid-500-800);
+  }
+}
