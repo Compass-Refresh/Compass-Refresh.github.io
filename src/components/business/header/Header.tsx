@@ -46,7 +46,7 @@ export function Header({ className }: HeaderProps) {
           open && "h-auto translate-x-0",
         )}
       >
-        <nav className="flex list-none flex-col divide-y divide-cyan-600 border-b border-cyan-600 bg-cyan-950">
+        <nav className="flex list-none flex-col divide-y divide-cyan-900 border-b border-cyan-700 bg-cyan-950">
           <li className="px-4 py-3 text-white">Home</li>
           <li className="px-4 py-3 text-white">About</li>
           <li className="px-4 py-3 text-white">Contact Us</li>
