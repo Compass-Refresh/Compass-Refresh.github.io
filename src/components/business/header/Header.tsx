@@ -5,6 +5,7 @@ import { CRLogo } from "@/components/ui/icons/CRLogo";
 import { MenuIcon } from "@/components/ui/icons/MenuIcon";
 import { cn } from "@/utils/cn";
 import { useReducer } from "react";
+import { MobileNav } from "./MobileNav";
 
 export type HeaderProps = {
   className?: string;
@@ -26,7 +27,7 @@ export function Header({ className }: HeaderProps) {
             <CRLogo className="w-16 text-cyan-600" />
           </div>
         </div>
-        <div className="flex h-full w-full items-center justify-end px-4">
+        <div className="flex h-full w-full items-center justify-end px-4 md:hidden">
           <button
             className="rounded-xl bg-cyan-950 p-1 shadow hover:bg-cyan-800"
             type="button"
@@ -41,19 +42,7 @@ export function Header({ className }: HeaderProps) {
           </button>
         </div>
       </div>
-      <div
-        className={cn(
-          "w-full -translate-x-full bg-white transition-all",
-          open && "h-auto translate-x-0",
-        )}
-      >
-        <nav className="flex list-none flex-col divide-y divide-cyan-900 border-b border-cyan-700 bg-cyan-950">
-          <li className="px-4 py-3 text-white">Home</li>
-          <li className="px-4 py-3 text-white">About</li>
-          <li className="px-4 py-3 text-white">Contact Us</li>
-          <li className="px-4 py-3 text-white">More</li>
-        </nav>
-      </div>
+      <MobileNav open={open} />
     </header>
   );
 }
