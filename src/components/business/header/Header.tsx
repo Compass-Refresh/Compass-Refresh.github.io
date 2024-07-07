@@ -1,5 +1,6 @@
 "use client";
 
+import { Cancel } from "@/components/ui/icons/Cancel";
 import { CRLogo } from "@/components/ui/icons/CRLogo";
 import { MenuIcon } from "@/components/ui/icons/MenuIcon";
 import { cn } from "@/utils/cn";
@@ -34,7 +35,7 @@ export function Header({ className }: HeaderProps) {
             {!open && <MenuIcon className="size-8 text-white" />}
             {open && (
               <div className="flex size-8 items-center justify-center text-white">
-                X
+                <Cancel />
               </div>
             )}
           </button>
