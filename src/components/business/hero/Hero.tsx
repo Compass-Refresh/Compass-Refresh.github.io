@@ -22,7 +22,7 @@ export function Hero({ className }: HeroProps) {
       />
 
       <div className="flex flex-col bg-black bg-opacity-50 p-2 pt-12 text-center text-white">
-        <h1 className="self-center rounded-xl bg-cyan-900 px-4 py-2 text-2xl">
+        <h1 className="self-center border-b  border-l-8 border-t border-cyan-600 bg-cyan-950 px-4 py-2 text-2xl">
           Elevated Commercial Space
         </h1>
         <h2 className="pt-2">Power. Precision. All by professionals.</h2>
