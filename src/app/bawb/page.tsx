@@ -1,17 +1,12 @@
 "use client";
 
-import { weirdCurve, useCoordinates, type Pair } from "@/hooks/useCoordinates";
-import { useInterval } from "@/hooks/useInterval";
+import { weirdCurve, useCoordinates } from "@/hooks/useCoordinates";
 import { useRandomColor } from "@/hooks/useRandomColor";
-import { v4 as uuid } from "uuid";
-import { type ReactNode, useCallback, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 let t = 0;
 
 export default function Page() {
-  const [bawbs, setBawbs] = useState<{ key: string; component: ReactNode }[]>(
-    [],
-  );
   const [started, setStarted] = useState(false);
   const color = useRandomColor(100);
   const textColor = useRandomColor(100);
@@ -40,8 +35,6 @@ export default function Page() {
         src="/images/bawb.png"
         alt="yes"
       />
-
-      {bawbs.map((b) => b.component)}
 
       <h1
         style={{ color: started ? textColor : "white" }}
